@@ -16,6 +16,6 @@ navLinks.querySelectorAll('a').forEach((link) => {
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.style.boxShadow = window.scrollY > 20
-    ? '0 4px 24px rgba(0, 0, 0, 0.3)'
+    ? '0 4px 24px rgba(15, 23, 42, 0.08)'
     : 'none';
 });

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="YanRong 的个人主页">
-  <title>YanRong | 个人主页</title>
+  <meta name="description" content="鄢荣 · Agent 开发 / 大模型应用开发 · 福州大学硕士研究生">
+  <title>鄢荣 | 个人主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,10 +15,8 @@
     <div class="nav-inner">
       <a href="#" class="logo">YR</a>
       <ul class="nav-links">
-        <li><a href="#about">关于</a></li>
-        <li><a href="#skills">技能</a></li>
         <li><a href="#projects">项目</a></li>
-        <li><a href="#contact">联系</a></li>
+        <li><a href="#background">背景</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
         <span></span><span></span><span></span>
@@ -29,128 +27,96 @@
   <header class="hero">
     <div class="hero-bg"></div>
     <div class="container hero-content">
-      <p class="hero-greeting">你好，我是</p>
-      <h1 class="hero-name">YanRong</h1>
-      <p class="hero-tagline">开发者 · 创造者 · 终身学习者</p>
+      <h1 class="hero-name">鄢荣</h1>
+      <p class="hero-tagline">Agent 开发 · 大模型应用开发 · 福州大学硕士在读</p>
       <p class="hero-desc">
-        欢迎来到我的个人主页。这里记录我的项目、想法与成长轨迹。
+        Python / Java 工程背景，独立实现两套大模型应用。熟悉 RAG、MCP、多轮对话状态机与 LLM 分层架构，
+        可完成「数据处理 → 检索 → 模型编排 → 前后端联调」完整闭环。
       </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">查看项目</a>
-        <a href="https://github.com/601973778-ux" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+      <div class="hero-badges">
+        <span class="badge">2 个大模型项目</span>
+        <span class="badge">绩点 10/70</span>
+        <span class="badge">CET-6 · 研究生英语免修</span>
+      </div>
+      <div class="hero-contact">
+        <a href="mailto:601973778@qq.com">601973778@qq.com</a>
+        <span class="sep">·</span>
+        <a href="tel:18850415451">18850415451</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/601973778-ux" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">关于我</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              我是一名热爱技术的开发者，专注于构建简洁、实用的软件与 Web 应用。
-              喜欢探索新工具，也乐于将想法落地成可运行的项目。
-            </p>
-            <p>
-              在这个主页上，我会持续更新我的作品集与博客链接。
-              欢迎通过下方方式与我交流。
-            </p>
-          </div>
-          <div class="about-stats">
-            <div class="stat-card">
-              <span class="stat-num">3+</span>
-              <span class="stat-label">年开发经验</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">10+</span>
-              <span class="stat-label">完成项目</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">∞</span>
-              <span class="stat-label">学习热情</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">技能</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon">🌐</div>
-            <h3>前端开发</h3>
-            <p>HTML / CSS / JavaScript / React</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3>后端开发</h3>
-            <p>Node.js / Python / API 设计</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">🔧</div>
-            <h3>工具与协作</h3>
-            <p>Git / GitHub / Cursor / VS Code</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">☁️</div>
-            <h3>部署运维</h3>
-            <p>GitHub Pages / CI/CD</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">项目</h2>
+        <h2 class="section-title">项目经历</h2>
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-header">
-              <h3>个人主页</h3>
-              <span class="project-tag">Web</span>
+              <h3>英语学习智能体平台</h3>
+              <span class="project-tag">2026.03 — 05</span>
             </div>
-            <p>基于 GitHub Pages 部署的静态个人网站，展示作品集与联系方式。</p>
-            <a href="https://github.com/601973778-ux/601973778-ux.github.io" class="project-link" target="_blank" rel="noopener">
-              查看仓库 →
-            </a>
+            <p>
+              面向 CET4/6、托福、GRE 的口语陪练 Agent，整合「背单词—巩固—情景口语」闭环，已开源。
+              可插拔 Protocol 架构、混合路由（规则引擎 + RAG-LLM）、 TF-IDF 检索与对话评估状态机。
+            </p>
+            <p class="project-stack">Python · RAG · TF-IDF · TTS/ASR · Ollama</p>
+            <a href="https://github.com/601973778-ux/English_study_app" class="project-link" target="_blank" rel="noopener">开源代码 →</a>
           </article>
+
           <article class="project-card">
             <div class="project-header">
-              <h3>项目示例 B</h3>
-              <span class="project-tag">App</span>
+              <h3>智能心理咨询助手</h3>
+              <span class="project-tag">2026.01 — 03</span>
             </div>
-            <p>在这里添加你的第二个项目描述，替换为真实内容。</p>
-            <a href="#" class="project-link">了解更多 →</a>
-          </article>
-          <article class="project-card">
-            <div class="project-header">
-              <h3>项目示例 C</h3>
-              <span class="project-tag">Tool</span>
-            </div>
-            <p>在这里添加你的第三个项目描述，替换为真实内容。</p>
-            <a href="#" class="project-link">了解更多 →</a>
+            <p>
+              基于 SpringAI 的心理咨询智能体，Chroma 知识库 + Flux 流式问答，MCP 打通邮件/Excel 形成预警闭环，
+              LoRA 微调提升状态识别准确性。
+            </p>
+            <p class="project-stack">Java · SpringAI · MCP · LoRA · Chroma · MySQL</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+    <section id="background" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">联系我</h2>
-        <div class="contact-grid">
-          <a href="mailto:601973778@qq.com" class="contact-card">
-            <span class="contact-icon">✉️</span>
-            <span class="contact-label">Email</span>
-            <span class="contact-value">601973778@qq.com</span>
-          </a>
-          <a href="https://github.com/601973778-ux" class="contact-card" target="_blank" rel="noopener">
-            <span class="contact-icon">🐙</span>
-            <span class="contact-label">GitHub</span>
-            <span class="contact-value">@601973778-ux</span>
-          </a>
+        <h2 class="section-title">技能 & 教育</h2>
+        <div class="background-grid">
+          <div class="background-block">
+            <h3 class="block-label">技能</h3>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">SpringAI</span>
+              <span class="tag">RAG</span>
+              <span class="tag">MCP</span>
+              <span class="tag">LoRA</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Chroma</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">RESTful API</span>
+              <span class="tag">Flux 流式响应</span>
+              <span class="tag">讯飞 TTS/ASR</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="background-block">
+            <h3 class="block-label">教育</h3>
+            <ul class="edu-list">
+              <li>
+                <strong>福州大学（211）· 硕士</strong>
+                <span>2024.09 — 2027.06 </span>
+              </li>
+              <li>
+                <strong>福州大学（211）· 本科</strong>
+                <span>2020.09 — 2024.06 · 绩点 10/70</span>
+                <span>两次综合奖学金</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -158,7 +124,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 YanRong · 由 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
+      <p>© 2026 CoconutYan · <a href="mailto:601973778@qq.com">601973778@qq.com</a> · <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a></p>
     </div>
   </footer>
 
